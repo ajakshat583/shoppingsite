@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJcart - Your One-Stop Shopping Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>AJcart</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="electronics.html">Electronics</a>
+                <a href="fashion.html">Fashion</a>
+                <a href="home-living.html">Home & Living</a>
+                <a href="books.html">Books</a>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to AJcart</h1>
+            <p>Your One-Stop Shopping Destination</p>
+            <div class="hero-buttons">
+                <a href="#featured-products" class="cta-button">Shop Now</a>
+                <a href="#categories" class="cta-button secondary">Explore Categories</a>
+            </div>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Products will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <a href="electronics.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=500" alt="Electronics">
+                <h3>Electronics</h3>
+                <p>Latest Tech Gadgets</p>
+            </a>
+            <a href="fashion.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=500" alt="Fashion">
+                <h3>Fashion</h3>
+                <p>Trendy Styles</p>
+            </a>
+            <a href="home-living.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=500" alt="Home & Living">
+                <h3>Home & Living</h3>
+                <p>Make Your Home Beautiful</p>
+            </a>
+            <a href="books.html" class="category-card">
+                <img src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=500" alt="Books">
+                <h3>Books</h3>
+                <p>Expand Your Knowledge</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: ₹<span id="cart-total-amount">0.00</span></h3>
+                <button id="checkout-btn" class="checkout-button">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About AJcart</h3>
+                <p>Your one-stop destination for all your shopping needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="electronics.html">Electronics</a></li>
+                    <li><a href="fashion.html">Fashion</a></li>
+                    <li><a href="home-living.html">Home & Living</a></li>
+                    <li><a href="books.html">Books</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@ajcart.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AJcart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
